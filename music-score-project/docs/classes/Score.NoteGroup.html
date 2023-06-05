@@ -38,8 +38,11 @@
 <a href="Score.NoteGroup.html#noteLength" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>note<wbr/>Length</span></a>
 <a href="Score.NoteGroup.html#notes" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>notes</span></a>
 <a href="Score.NoteGroup.html#ownStemDir" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>own<wbr/>Stem<wbr/>Dir</span></a>
+<a href="Score.NoteGroup.html#setStemDir" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>set<wbr/>Stem<wbr/>Dir?</span></a>
 <a href="Score.NoteGroup.html#slur" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>slur</span></a>
+<a href="Score.NoteGroup.html#staccato" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>staccato</span></a>
 <a href="Score.NoteGroup.html#tie" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>tie</span></a>
+<a href="Score.NoteGroup.html#voiceId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>voice<wbr/>Id</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
@@ -81,11 +84,13 @@
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_NoteGroup"><span class="tsd-kind-constructor-signature">new <wbr/>Note<wbr/>Group</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">col</span>, <span class="tsd-kind-parameter">notes</span>, <span class="tsd-kind-parameter">noteLength</span>, <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Score.NoteGroup.html" class="tsd-signature-type tsd-kind-class">NoteGroup</a><a href="#constructor.new_NoteGroup" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_NoteGroup"><span class="tsd-kind-constructor-signature">new <wbr/>Note<wbr/>Group</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">voiceId</span>, <span class="tsd-kind-parameter">col</span>, <span class="tsd-kind-parameter">notes</span>, <span class="tsd-kind-parameter">noteLength</span>, <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Score.NoteGroup.html" class="tsd-signature-type tsd-kind-class">NoteGroup</a><a href="#constructor.new_NoteGroup" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">voiceId</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">col</span>: <a href="Score.RhythmicColumn.html" class="tsd-signature-type tsd-kind-class">RhythmicColumn</a></h5></li>
 <li>
@@ -99,7 +104,7 @@
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member"><a id="arpeggio" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>arpeggio</span><a href="#arpeggio" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">arpeggio</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/Music.ArpeggioDir.html" class="tsd-signature-type tsd-kind-enum">ArpeggioDir</a></div></section>
+<div class="tsd-signature"><span class="tsd-kind-property">arpeggio</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/Score.ArpeggioDir.html" class="tsd-signature-type tsd-kind-enum">ArpeggioDir</a></div></section>
 <section class="tsd-panel tsd-member"><a id="color" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>color</span><a href="#color" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">color</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div></section>
@@ -117,13 +122,22 @@
 <div class="tsd-signature"><span class="tsd-kind-property">notes</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="Music.Note.html" class="tsd-signature-type tsd-kind-class">Note</a><span class="tsd-signature-symbol">[]</span></div></section>
 <section class="tsd-panel tsd-member"><a id="ownStemDir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>own<wbr/>Stem<wbr/>Dir</span><a href="#ownStemDir" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">own<wbr/>Stem<wbr/>Dir</span><span class="tsd-signature-symbol">:</span> <a href="../enums/Music.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></div></section>
+<div class="tsd-signature"><span class="tsd-kind-property">own<wbr/>Stem<wbr/>Dir</span><span class="tsd-signature-symbol">:</span> <a href="../enums/Score.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></div></section>
+<section class="tsd-panel tsd-member"><a id="setStemDir" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>set<wbr/>Stem<wbr/>Dir</span><a href="#setStemDir" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">set<wbr/>Stem<wbr/>Dir</span><span class="tsd-signature-symbol">?:</span> <a href="../enums/Score.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></div></section>
 <section class="tsd-panel tsd-member"><a id="slur" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>slur</span><a href="#slur" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">slur</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Score.Slur.html" class="tsd-signature-type tsd-kind-class">Slur</a></div></section>
+<section class="tsd-panel tsd-member"><a id="staccato" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>staccato</span><a href="#staccato" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">staccato</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div></section>
 <section class="tsd-panel tsd-member"><a id="tie" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>tie</span><a href="#tie" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">tie</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Score.Tie.html" class="tsd-signature-type tsd-kind-class">Tie</a></div></section></section>
+<div class="tsd-signature"><span class="tsd-kind-property">tie</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Score.Tie.html" class="tsd-signature-type tsd-kind-class">Tie</a></div></section>
+<section class="tsd-panel tsd-member"><a id="voiceId" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>voice<wbr/>Id</span><a href="#voiceId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">voice<wbr/>Id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member"><a id="doc" class="tsd-anchor"></a>
@@ -147,9 +161,9 @@
 <section class="tsd-panel tsd-member"><a id="stemDir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stem<wbr/>Dir</span><a href="#stemDir" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature" id="stemDir.stemDir-1"><span class="tsd-signature-symbol">get</span> stemDir<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/Music.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></li>
+<li class="tsd-signature" id="stemDir.stemDir-1"><span class="tsd-signature-symbol">get</span> stemDir<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/Score.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <a href="../enums/Music.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></h4></li></ul></section></section>
+<h4 class="tsd-returns-title">Returns <a href="../enums/Score.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></h4></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="draw" class="tsd-anchor"></a>
@@ -361,7 +375,7 @@
 <li>
 <h5><span class="tsd-kind-parameter">pitch</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">stemDir</span>: <a href="../enums/Music.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">stemDir</span>: <a href="../enums/Score.StemDir.html" class="tsd-signature-type tsd-kind-enum">StemDir</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></h4></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="hasSameNotes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>has<wbr/>Same<wbr/>Notes</span><a href="#hasSameNotes" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
@@ -425,8 +439,11 @@
 <li><a href="#noteLength" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>note<wbr/>Length</span></a></li>
 <li><a href="#notes" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>notes</span></a></li>
 <li><a href="#ownStemDir" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>own<wbr/>Stem<wbr/>Dir</span></a></li>
+<li><a href="#setStemDir" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>set<wbr/>Stem<wbr/>Dir</span></a></li>
 <li><a href="#slur" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>slur</span></a></li>
+<li><a href="#staccato" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>staccato</span></a></li>
 <li><a href="#tie" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>tie</span></a></li>
+<li><a href="#voiceId" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>voice<wbr/>Id</span></a></li>
 <li><a href="#doc" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>doc</span></a></li>
 <li><a href="#measure" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>measure</span></a></li>
 <li><a href="#row" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>row</span></a></li>
@@ -550,13 +567,10 @@
 <details class="tsd-index-accordion" data-key="Music"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg><a href="../modules/Music.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>Music</span></a></summary>
 <div class="tsd-accordion-details">
 <ul class="tsd-nested-navigation">
-<li><a href="../enums/Music.ArpeggioDir.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Arpeggio<wbr/>Dir</span></a></li>
 <li><a href="../enums/Music.NoteLength.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Note<wbr/>Length</span></a></li>
 <li><a href="../enums/Music.PitchNotation.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Pitch<wbr/>Notation</span></a></li>
 <li><a href="../enums/Music.ScaleType.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Scale<wbr/>Type</span></a></li>
-<li><a href="../enums/Music.StemDir.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Stem<wbr/>Dir</span></a></li>
 <li><a href="../enums/Music.SymbolSet.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Symbol<wbr/>Set</span></a></li>
-<li><a href="../enums/Music.TextLocation.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Text<wbr/>Location</span></a></li>
 <li><a href="Music.DoubleAccidentalException.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Double<wbr/>Accidental<wbr/>Exception</span></a></li>
 <li><a href="Music.GuitarContext.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Guitar<wbr/>Context</span></a></li>
 <li><a href="Music.Interval.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Interval</span></a></li>
@@ -588,7 +602,6 @@
 <li><a href="../variables/Music.ShortestNoteLength.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg><span>Shortest<wbr/>Note<wbr/>Length</span></a></li>
 <li><a href="../variables/Music.TuningNameList.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg><span>Tuning<wbr/>Name<wbr/>List</span></a></li>
 <li><a href="../functions/Music.canDotNote.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>can<wbr/>Dot<wbr/>Note</span></a></li>
-<li><a href="../functions/Music.getAutoStemDir.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>get<wbr/>Auto<wbr/>Stem<wbr/>Dir</span></a></li>
 <li><a href="../functions/Music.getChordNames.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>get<wbr/>Chord<wbr/>Names</span></a></li>
 <li><a href="../functions/Music.getDefaultScale.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>get<wbr/>Default<wbr/>Scale</span></a></li>
 <li><a href="../functions/Music.getDefaultSignatureState.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>get<wbr/>Default<wbr/>Signature<wbr/>State</span></a></li>
@@ -612,7 +625,10 @@
 <details class="tsd-index-accordion" open data-key="Score"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg><a href="../modules/Score.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>Score</span></a></summary>
 <div class="tsd-accordion-details">
 <ul class="tsd-nested-navigation">
+<li><a href="../enums/Score.ArpeggioDir.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Arpeggio<wbr/>Dir</span></a></li>
 <li><a href="../enums/Score.ImageAsset.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Image<wbr/>Asset</span></a></li>
+<li><a href="../enums/Score.StemDir.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Stem<wbr/>Dir</span></a></li>
+<li><a href="../enums/Score.TextLocation.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Text<wbr/>Location</span></a></li>
 <li><a href="Score.Arc.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Arc</span></a></li>
 <li><a href="Score.Arpeggio.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Arpeggio</span></a></li>
 <li><a href="Score.Beam.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Beam</span></a></li>
